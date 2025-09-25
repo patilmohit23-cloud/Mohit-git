@@ -1,6 +1,0 @@
-a=input("Enter your first name: ")
-A=str(a)
-b=input("Enter your last name: ")
-B=str(b)
-c=A+B
-print("Hello, "+c+"! welcome to the python program")
