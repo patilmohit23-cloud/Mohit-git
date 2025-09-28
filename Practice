@@ -1,0 +1,72 @@
+# def add(a,b):
+#     print(a+b)
+
+# add(3,5)
+
+# def add(a,b):
+#     c=a+b
+#     return c
+# A=add(5,7)
+# print(A)
+
+# def mult(a,b):
+#     return(a*b)
+# A=mult(8,9)
+# print(A)
+
+# def add(a,b):
+#       return a+b
+
+# def square(x):
+#     return x*x
+
+# A=square(add(6,2))
+# print(A)
+
+# import math
+# print(math.pi)
+
+# from math import pi
+# print(pi)
+
+# def factorial(n):
+#     if n < 2:
+#         return 1
+#     else:
+#         return n * (factorial(n-1))
+    
+# A=factorial(4)
+# print(A)
+
+# n=1
+
+# def fn():
+#     n=5
+#     print('in',n)
+# fn()
+
+# print('out',n)
+
+# def factorial (n):
+#     if n < 2:
+#         return 1
+#     else:
+#         return n * (factorial(n-1))
+# num=int(input("Enter you number: "))
+# A=factorial (num)
+# print(A)
+
+
+
+# import math
+# print(dir(math))
+
+import math
+
+num=float(input("Enter a number: "))
+A=math.sqrt(num)
+print("Square root:",A)
+B=math.log(num)
+print("Logarithm: ",B)
+C=math.sin(num)
+print("sine: ",C)
