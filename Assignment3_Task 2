@@ -1,0 +1,10 @@
+
+import math
+
+num=float(input("Enter a number: "))
+A=math.sqrt(num)
+print("Square root:",A)
+B=math.log(num)
+print("Logarithm: ",B)
+C=math.sin(num)
+print("sine: ",C)
