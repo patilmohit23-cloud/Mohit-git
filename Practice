@@ -61,12 +61,101 @@
 # import math
 # print(dir(math))
 
-import math
+# import math
 
-num=float(input("Enter a number: "))
-A=math.sqrt(num)
-print("Square root:",A)
-B=math.log(num)
-print("Logarithm: ",B)
-C=math.sin(num)
-print("sine: ",C)
+# num=float(input("Enter a number: "))
+# A=math.sqrt(num)
+# print("Square root:",A)
+# B=math.log(num)
+# print("Logarithm: ",B)
+# C=math.sin(num)
+# print("sine: ",C)
+
+
+#Open file
+
+# file1= open('2_GitAndGithubCommands.txt','r')
+# reading_File= file1.read()
+# print(reading_File)
+# file1.close()
+
+# with open('2_GitAndGithubCommands.txt','r') as file:
+
+#     reading_file=file.read(5)
+#     print(reading_file)
+
+# file1= open('2_GitAndGithubCommands.txt','a')
+# appending_File= file1.write('Hello')
+# print(appending_File)
+# file1.close()
+
+#file_name='Sample_file.txt'
+
+# try:
+#     file1= open('Sample_file.txt','r')
+#     print('Reading file content:')
+#     reading_File= file1.readline()
+#     print(f"Line 1:{reading_File}")
+#     reading_File1= file1.readline()
+#     print(f"Line 2:{reading_File1}")
+#     file1.close()
+# except FileNotFoundError as A:
+#     print(f'Error: the file {A.filename} was not found')
+
+
+# try:
+#     with open ('Sample_file.txt','r') as file1:
+#         print('Reading the file content:')
+#         print(f"Line 1: {file1.readline()}")
+#         print(f"Line 2: {file1.readline()}")
+# except  FileNotFoundError as A:
+#     print(f"Error: the file {A.filename} was not found")
+
+
+# try:
+#     file1= open('Sample_file.txt','a')
+#     print('Reading file content:')
+#     reading_File= input(file1.write())
+#     print(f"Line 1:{reading_File}")
+#     reading_File1= file1.readline()
+#     print(f"Line 2:{reading_File1}")
+#     file1.close()
+# except FileNotFoundError as A:
+#     print(f'Error: the file {A.filename} was not found')
+
+
+#Method 1
+# A=input("Enter text to write to file: ")
+
+# with open ('output.txt','w') as file:
+#     file.write(A+'\n')
+#     print('Data successfully inserted in file output.txt. \n')
+
+# B=input("Enter additional text to append: ")
+
+# with open ('output.txt','a') as file1:
+#     file1.write(B+'\n')
+#     print('Data successfully appended')
+
+# with open ('output.txt','r') as file2:
+#     print ("final content of output.txt:")
+#     C=file2.read()
+#     print(C)
+
+#Method 2
+
+
+# file =open('output.txt','w')
+# writing_file=input("Enter text ti write to file: ")
+# file.write(writing_file+'\n')
+# print("Data successfully inserted in the file output.txt \n")
+
+# file =open('output.txt','a')
+# writing_file=input("Enter text to append: ")
+# file.write(writing_file+'\n')
+# print('Data successfully appended')
+
+file= open ('output.txt','r')
+print ("final content of output.txt:")
+A=file.read()
+print(A)

@@ -1,0 +1,22 @@
+
+#Method 1:
+try:
+    file1= open('Sample_file.txt','r')
+    print('Reading file content:')
+    reading_File= file1.readline()
+    print(f"Line 1:{reading_File}")
+    reading_File1= file1.readline()
+    print(f"Line 2:{reading_File1}")
+    file1.close()
+except FileNotFoundError as A:
+    print(f'Error: the file {A.filename} was not found')
+
+
+#Method 2:
+try:
+    with open ('Sample_file.txt','r') as file1:
+        print('Reading the file content:')
+        print(f"Line 1: {file1.readline()}")
+        print(f"Line 2: {file1.readline()}")
+except  FileNotFoundError as A:
+    print(f"Error: the file {A.filename} was not found")
