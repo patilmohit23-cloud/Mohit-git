@@ -124,7 +124,7 @@
 #     print(f'Error: the file {A.filename} was not found')
 
 
-#Method 1
+# #Method 1
 # A=input("Enter text to write to file: ")
 
 # with open ('output.txt','w') as file:
@@ -142,7 +142,7 @@
 #     C=file2.read()
 #     print(C)
 
-#Method 2
+# #Method 2
 
 
 # file =open('output.txt','w')
@@ -155,7 +155,51 @@
 # file.write(writing_file+'\n')
 # print('Data successfully appended')
 
-file= open ('output.txt','r')
-print ("final content of output.txt:")
-A=file.read()
-print(A)
+# file= open ('output.txt','r')
+# print ("final content of output.txt:")
+# A=file.read()
+# print(A)
+
+
+# my_dict={'Key1':1,'Key2':333,'Key3':67}
+# print(my_dict)
+
+# print(my_dict.keys())
+# print(my_dict.values())
+# print(my_dict.get('Key4'))
+
+
+# l=['mike',10.9,1000,10,14,10]
+# l.append(12)
+# l.extend([12,14,15,17])
+# l.remove(10)
+# del l[3]
+# l.clear()
+# print(l)
+
+# x=[]
+# for i in range(11):
+#     z=i**2
+#     x.append(z)
+# print(x)
+
+# x=[i**2 for i in range(11) if i**2 %2 ==0]
+# print(x)
+
+# Name='Mike'
+# Number=len(Name)*3
+# print("Hello {}, your lucky number is {}.".format(Name,Number))
+
+
+# try:
+#     Name=input("Enter student's name: ")
+#     Dictionary={'Mohit':35,'Vipul':30, 'Ajay':45, 'Varun':50}
+#     print(f"{Name}'s marks: ",Dictionary[Name])
+# except KeyError as A:
+#      print(f'Student {Name} not found')
+
+list=[1,2,3,4,5,6,7,8,9,10]
+print("Original list:",list)
+print("Extracted first five elements:",list[0:5])
+list.reverse()
+print("Reverse extracted elements:",list[5:11])

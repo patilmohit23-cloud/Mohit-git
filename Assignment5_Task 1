@@ -1,0 +1,6 @@
+try:
+    Name=input("Enter student's name: ")
+    Dictionary={'Mohit':35,'Vipul':30, 'Ajay':45, 'Varun':50}
+    print(f"{Name}'s marks: ",Dictionary[Name])
+except KeyError as A:
+     print(f'Student {Name} not found')
